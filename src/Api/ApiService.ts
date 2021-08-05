@@ -1,31 +1,28 @@
-class ApiService {
-    readonly urlType: string = "https://api.punkapi.com/v2/beers"
-    readonly OptionsType: object = {}
+export default class ApiService {
+    //"https://api.punkapi.com/v2/beers"
 
-    constructor(baseUrl?:string, baseOptions?:null}){
-        if(this.baseUrl !== undefined){
-            this.urlType = this.baseUrl
-            this.OptionsType = this.baseOptions
-        }
-       
-    }
-    interface forGet{
-        url:string,
-        headers:object
-    }
+    // public constructor(protected baseUrl: string = 'https://api.punkapi.com/v2/beers', protected headers: object) {
+    //     this.baseUrl = baseUrl
+    // }
+    // public async getBeer(url: string) {
+    //     const response = await fetch(this.baseUrl + url, {
+    //         method: 'GET',
+    //         // headers: headers
+    //     });
+    //     let result = await response.json()     
+    //     console.log(result);
 
-    async getAll (url:string,headers:object):void {
-        const response = await fetch(this.baseUrl + url, {
-            method: 'GET',
-            headers: headers
-        });
-        let result = await response.json()
-    
-        return result
-    }
+    //     return result
+    // }
 
-   
 }
 
-const Service = new ApiService()
-export default Service
+export const getBeerAsync = async () => {
+    const data = await fetch('https://api.punkapi.com/v2/beers',
+    { method:'GET'}
+     )
+    let result = await data.json()
+    // console.log(result);
+    return result
+    
+}

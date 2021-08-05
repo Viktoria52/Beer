@@ -1,12 +1,9 @@
-import React from 'hoist-non-react-statics/node_modules/@types/react';
-// import './App.css';
+import Main from "./Components/Table/Main";
 
 function App() {
-  console.log();
-  
   return (<>
-
-
+    <Main />
+  
   </>);
 }
 

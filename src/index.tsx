@@ -1,4 +1,3 @@
-import React from 'react-dom/node_modules/@types/react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
