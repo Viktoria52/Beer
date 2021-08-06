@@ -1,8 +1,17 @@
 .img{
-    width: 50px;
-    height: 60px;
+    width: 35px;
+    height: 62px;
     background-repeat: no-repeat;
 }
 .MainTable{
     padding: 0 10px 0 10px
+}
+.descriptionContainer{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    z-index: 134;
+    position: absolute;
+    padding: 105px;
+    /* background-color: red; */
 }

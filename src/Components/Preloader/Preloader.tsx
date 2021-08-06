@@ -1,11 +1,12 @@
 import { Spin } from 'antd';
 import { LoadingOutlined } from '@ant-design/icons';
+import style from '../Style/Preloader.module.css'
 
-const antIcon = <LoadingOutlined style={{ fontSize: 24 }} spin />;
+const antIcon = <LoadingOutlined style={{ fontSize: 60 }} spin />;
 
 const Preloader=()=>{
     return(
-        <Spin indicator={antIcon} />
+        <Spin className={style.spin} indicator={antIcon} />
     )
 }
 

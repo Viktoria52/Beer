@@ -1,0 +1,96 @@
+.description{
+    /* background-color: red; */
+    /* position: absolute; */
+    padding: 20px;
+    background-color: rgb(102, 173, 214);
+    width: 400px;
+    margin: 0;
+    border-radius: 15px;
+    /* padding: 0; */
+}
+.closeDescription{
+    outline: none;
+   border: none;
+   background:none;
+   padding-left: 10px;
+padding-bottom: 10px;
+margin: 0 auto;
+width: 50px;
+color: white;
+}
+
+.icon{
+    font-size: 35px;
+    /* right: 0 */
+}
+
+
+.wrapper{
+    display: grid;
+    padding: 10px;
+    margin: 0;
+    grid-column-gap: 0 !important;
+    grid-template-columns: repeat(2,1fr);
+    /* border:3px solid white */
+    /* grid-template-columns: repeat(2, 3fr 1fr) ; */
+    /* grid-template-columns: auto;
+    grid-template-areas:
+     "i  d"
+      "i  d"
+      "i  n"
+      "i  t"
+     "i  bf"
+       "i  bt"
+       "i  a"
+       "i  i";
+      height:auto */
+}
+.descriptionP{
+    grid-area: 'd';
+    border:1px solid white;
+    padding: 2px;
+    grid-column-start: 3;
+grid-column-end: 4;
+    /* background-color: yellow; */
+    /* width: 170px; */
+}
+.name{
+    grid-area: 'n';
+    
+    /* background-color: green; */
+    /* width: 80px; */
+}
+.tagline{
+    grid-area: 't';
+    /* background-color: blue; */
+    /* width: 80px */
+}
+.abv{
+    grid-area: 'a';
+    /* background-color: brown; */
+    /* width: 80px */
+}
+.brewedFirst{
+    grid-area: 'bf';
+    /* background-color: grey; */
+    /* width: 80px */
+}
+.brewTip{
+    grid-area: 'bt';
+    /* background-color: pink; */
+    /* width: 120px; */
+    grid-column-start: 1;
+    grid-column-end: 4;
+    
+    
+}
+.image{
+    grid-area: 'i';
+     /* width: 100px; */
+height: 200px; 
+grid-column-start: 1;
+grid-column-end: 2;
+grid-row-start: 1;
+grid-row-end: 6;
+/* background-color: tomato; */
+}
