@@ -15,3 +15,7 @@
     padding: 105px;
     /* background-color: red; */
 }
+
+.elementTable {
+    position: relative !important;
+}
